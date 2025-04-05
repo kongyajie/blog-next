@@ -1,0 +1,33 @@
+name: Deploy VitePress to GitHub Pages
+
+on:
+  # 当向 master 分支推送代码时触发工作流
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 检出代码
+      - name: Checkout
+        uses: actions/checkout@v4
+      # 设置 Node.js 环境
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+      # 安装依赖
+      - name: Install dependencies
+        run: npm install
+      # 构建 VitePress 项目
+      - name: Build VitePress site
+        run: npm run docs:build
+      # 部署到 GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/.vitepress/dist
