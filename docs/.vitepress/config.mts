@@ -5,12 +5,12 @@ export default defineConfig({
   title: "前端AK君",
   description: "系统性学习，打造完善的知识体系",
   head: [
-    ['link', { rel: 'icon', href: '/imgs/favicon.ico' }],
-    ['link', { rel: 'apple-touch-icon', href: '/imgs/logo.png' }],
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['link', { rel: 'apple-touch-icon', href: '/logo.png' }],
     // ['meta', { name: 'theme-color', content: '#3eaf7c' }],
   ],
   themeConfig: {
-    logo: '/imgs/logo.png',
+    logo: '/logo.png',
     lastUpdated: { text: '上次更新' }, // 文档更新时间：每个文件 git 最后提交的时间
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -31,7 +31,7 @@ export default defineConfig({
           { text: 'JS异步进阶', link: '/article/前端基础/JS进阶/JS异步进阶' },
           { text: 'JS异常处理', link: '/article/前端基础/JS进阶/JS异常处理' },
           { text: 'JS精选题集', link: '/article/前端基础/JS进阶/JS精选题集' },
-          { text: '总览', link: '/article/前端基础/JS编程/总览' },
+          { text: 'JS编程', link: '/article/前端基础/JS编程/总览' },
         ],
         collapsed: true,
       },
@@ -97,6 +97,9 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/kongyajie/' }
-    ]
+    ],
+    footer: {
+      message: "MIT Licensed | 沪ICP备20013265号-1 | Copyright © 2019-present AaronKong"
+    },
   }
 })

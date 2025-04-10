@@ -1,8 +1,6 @@
 # JS进阶系列
 
-![](http://assets.processon.com/chart_image/61acbbc15653bb28d8fa7229.png)
-
-[思维导图](https://www.processon.com/view/link/6258d462e401fd4961a69bbc)
+![](../../../imgs/javascript.png)
 
 ## 前言
 作为前端开发，几乎每天都要和 `JavaScript` 打交道，不管是写页面组件、业务逻辑，还是 `Node.js`，都离不开` JavaScript` 。
@@ -28,6 +26,7 @@
 - [JS异步进阶](./JS异步进阶)
 - [JS异常处理](./JS异常处理)
 - [JS精选题集](./JS精选题集)
+- [JS编程](../JS编程/总览)
 
 ## 参考资料
 [JavaScript思维导图](https://www.processon.com/mindmap/61372ae607912906b8b7ec2c)
