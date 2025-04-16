@@ -33,6 +33,9 @@ jobs:
       # 构建 VitePress 项目
       - name: Build VitePress site
         run: pnpm run docs:build
+      # 添加 CNAME 文件
+      - name: Add CNAME file
+        run: echo 'blog.aaronkong.top' > docs/.vitepress/dist/CNAME
       # 部署到 GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
