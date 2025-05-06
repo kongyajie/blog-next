@@ -65,6 +65,7 @@ export default defineConfig({
           { text: 'React系列之4-原理', link: '/article/前端框架/react/React系列之4-原理' },
           { text: 'React系列之5-常见问题', link: '/article/前端框架/react/React系列之5-常见问题' },
           { text: 'React系列之6-hooks', link: '/article/前端框架/react/React系列之6-hooks' },
+          { text: 'React系列之7-常见面试题', link: '/article/前端框架/react/React系列之7-常见面试题' },
           { text: 'webpack', link: '/article/前端框架/webpack/webpack' },
           { text: 'webpack分享', link: '/article/前端框架/webpack/webpack分享' },
         ],

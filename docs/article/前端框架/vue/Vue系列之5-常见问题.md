@@ -368,7 +368,7 @@ pc端：
 - Vue3.0 [变化](https://juejin.cn/post/6847902222743765005)
     - 首先是源码优化，vue.js框架本身的优化，目的是让代码更易于开发和维护（使用Typescript）
     - 性能优化（Object.define => proxy）
-    - 优化逻辑组织（提供compsositon api）
+    - 优化逻辑组织（提供Composition api）
 - TypeScript
 - Vite
 
