@@ -277,7 +277,9 @@ async function fn() {
 (async function() {
   const a = fn()
   const b = await fn()
-})
+  console.info('a', a)
+  console.info('b', b)
+})()
 ```
 
 
