@@ -1,5 +1,8 @@
 import { defineConfig } from 'vitepress'
 
+// 判断是否为生产环境
+const isProd = import.meta.env.MODE === 'production'
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "前端AK君",
@@ -8,6 +11,23 @@ export default defineConfig({
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['link', { rel: 'apple-touch-icon', href: '/logo.png' }],
     // ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+
+    // 百度统计代码 - 仅生产环境
+    ...(isProd ? [
+      [
+        'script',
+        {},
+        [
+          'var _hmt = _hmt || [];',
+          '(function() {',
+          '  var hm = document.createElement("script");',
+          '  hm.src = "https://hm.baidu.com/hm.js?fab4383346b3b4bda0abd348f99b9e1c";',
+          '  var s = document.getElementsByTagName("script")[0];',
+          '  s.parentNode.insertBefore(hm, s);',
+          '})();'
+        ].join('\n')
+      ]
+    ] : []) as any
   ],
   themeConfig: {
     logo: '/logo.png',
