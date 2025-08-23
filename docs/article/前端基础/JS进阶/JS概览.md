@@ -74,6 +74,12 @@ JS引擎是一个专门处理JS脚本的虚拟机，一般会附带在浏览器�
 - `ECMAScript` 标准描述了 `JavaScript` 的语法和基本对象等。
 - `JavaScript` 需要运行在宿主环境如浏览器、Node.js中，宿主环境中的JS引擎负责解释执行JS脚本。
 
-
 ## 参考资料
 - [维基百科 JavaScript](https://zh.wikipedia.org/wiki/JavaScript)
+
+## 扩展阅读
+
+- 浏览器内部实现原理？
+- V8引擎内部实现原理？
+- 一门编程语言都有哪些部分？
+- 如何创造一个编程语言？实现一个toy-js？实现一个jayScript

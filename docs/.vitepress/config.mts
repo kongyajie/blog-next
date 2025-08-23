@@ -1,7 +1,9 @@
 import { defineConfig } from 'vitepress'
 
 // 判断是否为生产环境
-const isProd = import.meta.env.MODE === 'production'
+// const isProd = import.meta.env.MODE === 'production'
+// 判断是否为生产环境
+const isProd = process.env.NODE_ENV === 'production'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
